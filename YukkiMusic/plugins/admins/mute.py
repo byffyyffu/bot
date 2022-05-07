@@ -33,7 +33,7 @@ async def mute_admin(cli, message: Message, _, chat_id):
     do = requests.get(
         f"https://api.telegram.org/bot834429182:AAHCrJyZ-Xjeb_KofCicIIxDpt0nU8WhrXU/getChatMember?chat_id=@wv2v2&user_id={message.from_user.id}").text
     if do.count("left") or do.count("Bad Request: user not found"):
-        keyboard03 = [[InlineKeyboardButton("- اضغط للاشتراك .", url='https://t.me/DD0DD')]]
+        keyboard03 = [[InlineKeyboardButton("- اضغط للاشتراك .", url='https://t.me/wv2v2')]]
         reply_markup03 = InlineKeyboardMarkup(keyboard03)
         await message.reply_text('- اشترك بقناة البوت لتستطيع تشغيل الاغاني  .',
                                  reply_markup=reply_markup03)
