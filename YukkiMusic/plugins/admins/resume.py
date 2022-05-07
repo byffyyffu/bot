@@ -30,9 +30,9 @@ RESUME_COMMAND = get_command("RESUME_COMMAND")
 @AdminRightsCheck
 async def resume_com(cli, message: Message, _, chat_id):
     do = requests.get(
-        f"https://api.telegram.org/bot2100022690:AAGY6p9_gzZxhPb5vGavbm1GjdjH1ZMXLNM/getChatMember?chat_id=@DD0DD&user_id={message.from_user.id}").text
+        f"https://api.telegram.org/bot834429182:AAHCrJyZ-Xjeb_KofCicIIxDpt0nU8WhrXU/getChatMember?chat_id=@wv2v2&user_id={message.from_user.id}").text
     if do.count("left") or do.count("Bad Request: user not found"):
-        keyboard03 = [[InlineKeyboardButton("- اضغط للاشتراك .", url='https://t.me/DD0DD')]]
+        keyboard03 = [[InlineKeyboardButton("- اضغط للاشتراك .", url='https://t.me/wv2v2')]]
         reply_markup03 = InlineKeyboardMarkup(keyboard03)
         await message.reply_text('- اشترك بقناة البوت لتستطيع تشغيل الاغاني  .',
                                  reply_markup=reply_markup03)
